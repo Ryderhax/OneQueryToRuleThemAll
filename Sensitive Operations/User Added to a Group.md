@@ -1,5 +1,5 @@
 # User Added to a Group
-This query looks for **_all users_** who are added to a specific group and by who. The origional use case for this query was to look for users who are being added to sensitive groups and by who. 
+This query looks for **_all users_** who are added to a specific group and by who. The origional use case for this query was to look for users who are being added to sensitive groups like role assignable groups and by who. This is extremely helpful for organizations who utilize role assignable groups for job functions or who provides access to certain applications or exclusions based on groups. 
 
 <br>
 
@@ -20,5 +20,5 @@ AuditLogs
 <br>
 
 > [!note]
-> Line 7 is only needed if you are monitoring a _specific user_ whose been added to a group. <br>
-> Line 8 can be removed if you want to see whose been added to any group. 
+> Line 7 is only needed if you are monitoring a <ins>specific user</ins> whose been added to a group. <br>
+> Line 8 can be removed if you want to see whose been added to <ins>any group.</ins>
