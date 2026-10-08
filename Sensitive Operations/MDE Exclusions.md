@@ -1,4 +1,4 @@
-# Exclusions in Microsoft Defender for Eendpoint
+# Exclusions in Microsoft Defender for Endpoint
 This query looks for exclusions being put in locally on the machine. I would highly recommend that if you do not disable the ability for local admins to create exclusions on your workstations or servers, you use this as an alert. <br><br>
 
 The KQL is going to show you events that have happened within your log retention window, I have included a powershell script for you to run that will return all exclusions within your environment (depending on how you run it) see that section for more details.
@@ -7,7 +7,7 @@ The KQL is going to show you events that have happened within your log retention
 # Query
 I have left a broad TimeGenerated line in the queries just for the sake of convienence, if you are running or looking into this for the first time it is helpful to understand times on when the exclusions were placed.
 
-## Simple Exlusion Search
+## Simple Exclusion Search
 ```kql
 DeviceRegistryEvents
     | where TimeGenerated >ago(180d) 
